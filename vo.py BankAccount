@@ -19,7 +19,8 @@ obj = BankAccount("Vighnesh",2800)
 print(obj.bygetter())
 
 obj.bysetter(60000)  # Safe Update
-print(obj.bygetter()) # Output :54000
+print(obj.bygetter()) # Output :60000
 
 #Direct access  
 #print(obj.__balance)    #AttributeError  
+
