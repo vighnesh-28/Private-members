@@ -1,0 +1,25 @@
+class BankAccount:
+
+    def __init__(self,owner,balance):
+        self.owner = owner    #public
+        self.__balance = balance #Private
+
+    def bygetter(self):
+        return self.__balance
+
+    def bysetter(self,amount):
+        if amount >= 0:
+            self.__balance = amount
+        else:
+          print("Invalid amount!")
+
+
+obj = BankAccount("Vighnesh",2800)
+
+print(obj.bygetter())
+
+obj.bysetter(60000)  # Safe Update
+print(obj.bygetter()) # Output :54000
+
+#Direct access  
+#print(obj.__balance)    #AttributeError  
